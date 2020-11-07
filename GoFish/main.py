@@ -40,7 +40,7 @@ class GoFish:
 
     def shuffle():
         random.shuffle(deck)
-    
+
     def deal():
         for i in range(0,len(players)):
             x = 0
@@ -64,7 +64,7 @@ class GoFish:
             if x == len(players[1]) and len(players[0]) == y:
                 print("GO FISH")
                 GoFish.fish(players[0])
-    
+
     def computer_turn():
         choice = cards[random.randint(0, 12)]
         x=0
@@ -78,9 +78,9 @@ class GoFish:
                 print("Go Fish")
                 GoFish.fish(players[1])
         pass
-    
 
-    
+
+
 def play_gofish():
     GoFish.shuffle()
     GoFish.deal()
@@ -97,10 +97,9 @@ def play_gofish():
     print(players[1])
     print("Player Score = {}".format(player_score[0]))
     print("Computer Score = {}".format(player_score[1]))
-        
-        
+
+
 
 
 play_gofish()
-
-
+# Adding this to make sure i still know what i am doing
